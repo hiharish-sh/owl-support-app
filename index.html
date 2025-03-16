@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subdomain Replacer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome for the copy icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <input type="text" id="subdomainInput" placeholder="Enter subdomain">
+            <button onclick="replaceSubdomain()">Submit</button>
+        </div>
+        <div class="result-container hidden" id="resultContainer">
+            <div class="category-section">
+                <h3>Brevo as source of truth</h3>
+                <div id="brevoResult" class="result-group"></div>
+            </div>
+            <div class="category-section">
+                <h3>Shopify as source of truth</h3>
+                <div id="shopifyResult" class="result-group"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

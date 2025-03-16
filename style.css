@@ -1,0 +1,101 @@
+.container {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.result-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    min-height: 20px;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    flex: 1;
+}
+
+.result-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.result-line {
+    margin-right: 10px;
+}
+
+.copy-icon {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.copy-icon:hover {
+    color: #333;
+}
+
+.copy-icon.copied {
+    color: #4CAF50;
+}
+
+.category-section {
+    margin-bottom: 30px;
+}
+
+.category-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eee;
+}
+
+.result-group {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.result-box:last-child {
+    margin-bottom: 0;
+}
