@@ -8,16 +8,17 @@ function replaceSubdomain() {
     if (subdomain) {
         // Brevo commands
         const brevoTexts = [
-            `/owly websiteflag ${subdomain} data_sync_skip enabled.`,
-            `/owly websiteflag ${subdomain} data_sync_skip disabled.`,
-            `/owly websiteflag ${subdomain} data_sync_skip status.`
+            `/owly websiteflag ${subdomain} data_sync_skip enabled`,
+            `/owly delete_brevo_subaccount ${subdomain}`,
+            `/owly websiteflag ${subdomain} brevo_merchant enabled`,
+            `/owly websiteflag ${subdomain} brevo_mfe disable`
         ];
         
         // Shopify commands
         const shopifyTexts = [
-            `/owly websiteflag ${subdomain} shopify_sync_skip enabled.`,
-            `/owly websiteflag ${subdomain} shopify_sync_skip disabled.`,
-            `/owly websiteflag ${subdomain} shopify_sync_skip status.`
+            `/owly delete_brevo_subaccount ${subdomain}`,
+            `/owly websiteflag ${subdomain} brevo_merchant enabled`,
+            `/owly websiteflag ${subdomain} brevo_mfe disable`
         ];
         
         // Create HTML content for Brevo commands
