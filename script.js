@@ -31,7 +31,7 @@ function replaceSubdomain() {
 
         // Fraud Commands
         const fraudTexts = [
-            `/owly cancelcharge ${subdomain}@shopify`,
+            `/owly unblock_fraudulent_website ${subdomain}@shopify`,
         ];
 
         updateResultSection('brevoResult', brevoTexts);
