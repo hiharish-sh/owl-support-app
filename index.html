@@ -12,14 +12,37 @@
             <input type="text" id="subdomainInput" placeholder="Enter subdomain">
             <button onclick="replaceSubdomain()">Submit</button>
         </div>
-        <div class="result-container hidden" id="resultContainer">
-            <div class="category-section">
-                <h3>Brevo as source of truth</h3>
-                <div id="brevoResult" class="result-group"></div>
+
+        <div class="tabs-container hidden" id="resultContainer">
+            <div class="tabs">
+                <button class="tab-button active" onclick="switchTab('migration')">Migration</button>
+                <button class="tab-button" onclick="switchTab('earlyStage')">Early Stage</button>
+                <button class="tab-button" onclick="switchTab('fraud')">Store Fraud</button>
             </div>
-            <div class="category-section">
-                <h3>Shopify as source of truth</h3>
-                <div id="shopifyResult" class="result-group"></div>
+
+            <div id="migration" class="tab-content active">
+                <div class="category-section">
+                    <h3>Brevo as source of truth</h3>
+                    <div id="brevoResult" class="result-group"></div>
+                </div>
+                <div class="category-section">
+                    <h3>Shopify as source of truth</h3>
+                    <div id="shopifyResult" class="result-group"></div>
+                </div>
+            </div>
+
+            <div id="earlyStage" class="tab-content">
+                <div class="category-section">
+                    <h3>Early Stage Commands</h3>
+                    <div id="earlyStageResult" class="result-group"></div>
+                </div>
+            </div>
+
+            <div id="fraud" class="tab-content">
+                <div class="category-section">
+                    <h3>Store Fraud Commands</h3>
+                    <div id="fraudResult" class="result-group"></div>
+                </div>
             </div>
         </div>
     </div>
